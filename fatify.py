@@ -17,7 +17,7 @@ if not hasattr(fuse, "__version__"):
 fuse.fuse_python_api = (0, 2)
 
 
-illegal_chars = "?*:"
+illegal_chars = '?*:|"'
 
 # replace every illegal character with an underscore
 translate_table = str.maketrans(illegal_chars, "_" * len(illegal_chars))
